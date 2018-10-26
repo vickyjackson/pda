@@ -3,9 +3,11 @@ var chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
 var expect = chai.expect;
 
-// `calculator.numberClick()` - concatenate multiple number button clicks
-// `calculator.operatorClick()` - chain multiple operations together
-// `calculator.clearClick()` - clear the running total without affecting the calculation
+// 1. Do the number buttons update the display of the running total?
+// 2. Do the arithmetical operations update the display with the result of the operation?
+// 3. Can multiple operations be chained together?
+// 4. Is the output as expected for a range of numbers (for example, positive, negative, decimals and very large numbers)?
+// 5. If a number is divided by zero, is the output 'Not a number'? (You will need to modify the Calculator model to meet this requirement).
 
 describe('calculator functionality', function() {
   beforeEach(function() {
