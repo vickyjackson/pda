@@ -3,6 +3,10 @@ var chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
 var expect = chai.expect;
 
+// `calculator.numberClick()` - concatenate multiple number button clicks
+// `calculator.operatorClick()` - chain multiple operations together
+// `calculator.clearClick()` - clear the running total without affecting the calculation
+
 describe('calculator functionality', function() {
   beforeEach(function() {
     browser.ignoreSynchronization = true;
